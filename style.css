@@ -56,10 +56,27 @@
 .navbar .container ul li {
   list-style: none;
   margin: 0 15px;
+  position: relative;
+  padding-bottom: 5px;
+  overflow: hidden;
 }
 
-.navbar .container ul li:hover {
-  border-bottom: 2px solid #000;
+.navbar .container ul li::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--secondary-color);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease-out;
+}
+
+.navbar .container ul li:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 .navbar .container ul li a {

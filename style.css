@@ -4,6 +4,24 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary-color: #679fc2;
+  --secondary-color: #000000;
+  --text-colot-white: #fff;
+  --font-size-p: 16px;
+  --font-size-h1: 35px;
+  --font-size-h3: 20px;
+  --font-weight: 700;
+  --font-family-1: "Roboto";
+  --font-family-2: "Teko";
+  --padding-container: 15px 100px;
+}
+
+.container {
+  padding: 15px 100px;
+}
+/* =========== Header */
+
 header {
   width: 100%;
   height: 60px;
@@ -14,7 +32,6 @@ header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 100px;
 }
 
 header .container a {
@@ -34,83 +51,205 @@ header .container ul {
 
 header .container ul li {
   list-style: none;
-  margin: 0 20px;
+  margin: 0 15px;
 }
 
 header .container ul li a {
-  font-size: 16px;
-  text-transform: uppercase;
-  font-family: "Roboto";
-  font-weight: 400;
+  font-size: var(--font-size-h3);
+  font-family: var(--font-family-2);
+  letter-spacing: 2px;
 }
 
-header .button {
-  width: 200px;
+header .button-header {
   display: flex;
   justify-content: space-between;
+  gap: 15px;
 }
 
-header .button button {
-  padding: 5px 20px;
+header .button-header a {
+  border: 2px solid #000;
+  padding: 7px 20px;
   border-radius: 20px;
-  font-family: "Teko";
-  font-size: 20px;
-  font-weight: 600;
-}
-
-header .button .login {
+  font-size: var(--font-size-h3);
+  font-weight: 500;
+  font-family: var(--font-family-2);
   background-color: transparent;
-  color: #000;
 }
 
-header .button .signup {
-  background-color: #000;
-  color: #fff;
-  border: none;
+header .button-header .signup {
+  background-color: var(--secondary-color);
+  color: var(--text-colot-white);
 }
 
+/* =========== hero */
 .hero {
   width: 100%;
   height: 100vh;
-  margin-top: 15px;
 }
 
 .hero .container {
   width: 100%;
-  padding: 0 100px;
-  display: flex;
 }
 
-.hero .image-background {
-  position: relative;
+.hero .container .background {
   width: 100%;
-  height: 0;
-  padding-top: calc(100% * (100 / 200));
-}
-
-.hero .image-background img {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  object-fit: cover; /* Atau contain */
-  object-position: 50% 0%; /* Posisi di tengah */
-  border-radius: 20px;
-}
-
-.content {
-  position: absolute;
-  bottom: 5%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  z-index: 1000;
   display: flex;
+  justify-content: center;
+}
+
+.hero .container .background img {
+  width: 1000px;
+}
+
+.hero .container .content {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   gap: 10px;
-  background-color: aqua;
-  opacity: 0;
+  margin-top: 15px;
 }
 
-.image-background:hover > .content {
-  opacity: 1;
+.hero .container .content h1 {
+  font-family: var(--font-family-1);
+  font-size: 60px;
+  font-weight: var(--font-weight);
+  text-align: center;
+}
+
+.hero .container .content p {
+  font-family: var(--font-family-1);
+  font-size: var(--font-size-h3);
+}
+
+.hero .mouse-scroll {
+  position: relative;
+  width: 25px;
+  height: 40px;
+  border: 2px solid #000;
+  border-radius: 40px;
+  animation-name: movee;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+}
+
+@keyframes movee {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(7px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.hero .mouse-scroll::before {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #000;
+  position: absolute;
+  left: 50%;
+  top: 5px;
+  animation-name: scrolling;
+  animation-iteration-count: infinite;
+  animation-duration: 1.5s;
+}
+
+@keyframes scrolling {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 0px);
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+    transform: translate(-50%, 20px);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, 20px);
+  }
+}
+
+/* ====== BitBelajar */
+.bitbelajar {
+  width: 100%;
+  height: 100vh;
+}
+
+.bitbelajar .container {
+  width: 100%;
+}
+
+.bitbelajar .button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 45px;
+}
+
+.bitbelajar .btn {
+  padding: 7px 30px;
+  border-radius: 30px;
+  font-family: var(--font-family-2);
+  font-size: 27px;
+  cursor: pointer;
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.bitbelajar .join {
+  border: none;
+  background-color: var(--secondary-color);
+}
+
+.bitbelajar .join {
+  color: var(--text-colot-white);
+  border: 3px solid #000;
+}
+
+.bitbelajar .see {
+  background-color: transparent;
+  border: 3px solid #000;
+}
+
+.bitbelajar .card-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.bitbelajar .card {
+  width: 30%;
+  display: flex;
+  height: 700px;
+}
+
+.bitbelajar .card-1 {
+  width: 100%;
+  height: 320px;
+  border-radius: 20px;
+  background-color: #737373;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.bitbelajar .card-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 45px;
 }

@@ -309,3 +309,101 @@
   display: flex;
   justify-content: center;
 }
+
+/* =============== Feature */
+.feature {
+  width: 100%;
+  margin: 30px 0px;
+}
+
+.feature .container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.feature .title h1 {
+  font-family: var(--font-family-1);
+  font-size: var(--font-size-h1);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.feature .content-feature {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.feature .content-feature img {
+  width: 100%;
+}
+.feature .content-card {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.feature .content-card ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 550px;
+  flex-wrap: wrap;
+}
+
+.feature .content-card .card {
+  list-style: none;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 15px;
+  border: 2px solid #000;
+}
+
+.feature .content-card .forum {
+  width: 140px;
+  height: 140px;
+}
+
+.feature .content-card .skill {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 200px;
+  height: 96px;
+  transform: translateY(20px);
+}
+
+.feature .content-card .badge {
+  display: flex;
+  flex-direction: row;
+  width: 320px;
+  height: 100px;
+  transform: translateY(-10px);
+}
+
+.feature .content-card .badge h3 {
+  margin: auto;
+}
+
+.feature .content-card .share {
+  width: 125px;
+  height: 132px;
+}
+
+.feature .content-card .learn {
+  width: 133px;
+  height: 130px;
+  transform: translateY(-20px);
+}

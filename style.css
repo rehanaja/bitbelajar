@@ -29,6 +29,7 @@
   height: 60px;
   margin-bottom: 15px;
   transition: 0.5s;
+  z-index: 1000;
 }
 
 .navbar .container {
@@ -113,27 +114,27 @@
 }
 
 /* =========== hero */
-.hero {
+#hero {
   width: 100%;
   height: 100vh;
 }
 
-.hero .container {
+#hero .container {
   width: 100%;
   padding: 0px 100px;
 }
 
-.hero .container .background {
+#hero .container .background {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.hero .container .background img {
-  width: 1000px;
+#hero .container .background img {
+  width: 80%;
 }
 
-.hero .container .content {
+#hero .container .content {
   display: flex;
   width: 100%;
   justify-content: center;
@@ -143,24 +144,25 @@
   margin-top: 15px;
 }
 
-.hero .container .content h1 {
+#hero .container .content h1 {
   font-family: var(--font-family-1);
   font-size: 60px;
   font-weight: var(--font-weight);
   text-align: center;
 }
 
-.hero .container .content p {
+#hero .container .content p {
   font-family: var(--font-family-1);
   font-size: var(--font-size-h3);
 }
 
-.hero .mouse-scroll {
+#hero .mouse-scroll {
   position: relative;
   width: 25px;
   height: 40px;
   border: 2px solid #000;
   border-radius: 40px;
+  margin-top: 25px;
   animation-name: movee;
   animation-iteration-count: infinite;
   animation-duration: 3s;
@@ -178,7 +180,7 @@
   }
 }
 
-.hero .mouse-scroll::before {
+#hero .mouse-scroll::before {
   content: "";
   display: block;
   width: 5px;
@@ -212,16 +214,16 @@
 }
 
 /* ====== BitBelajar */
-.bitbelajar {
+#bitbelajar {
   width: 100%;
   height: 100vh;
 }
 
-.bitbelajar .container {
+#bitbelajar .container {
   width: 100%;
 }
 
-.bitbelajar .button {
+#bitbelajar .button {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -229,7 +231,7 @@
   gap: 45px;
 }
 
-.bitbelajar .btn {
+#bitbelajar .btn {
   padding: 7px 30px;
   border-radius: 30px;
   font-family: var(--font-family-2);
@@ -240,29 +242,29 @@
   font-weight: 500;
 }
 
-.bitbelajar .join {
+#bitbelajar .join {
   border: none;
   background-color: var(--secondary-color);
 }
 
-.bitbelajar .join {
+#bitbelajar .join {
   color: var(--text-colot-white);
   border: 3px solid #000;
 }
 
-.bitbelajar .see {
+#bitbelajar .see {
   background-color: transparent;
   border: 3px solid #000;
 }
 
-.bitbelajar .card-container {
+#bitbelajar .card-container {
   width: 100%;
   margin: 40px 0px;
   display: flex;
   justify-content: space-around;
 }
 
-.bitbelajar .card {
+#bitbelajar .card {
   width: 30%;
   display: flex;
   height: 700px;
@@ -270,7 +272,7 @@
   justify-content: space-between;
 }
 
-.bitbelajar .card-left {
+#bitbelajar .card-left {
   width: 100%;
   height: 320px;
   border-radius: 20px;
@@ -280,7 +282,7 @@
   text-align: center;
 }
 
-.bitbelajar .card-content {
+#bitbelajar .card-content {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -289,7 +291,7 @@
   padding: 45px;
 }
 
-.bitbelajar .card-right {
+#bitbelajar .card-right {
   width: 100%;
   height: 320px;
   border-radius: 20px;
@@ -299,24 +301,24 @@
   text-align: center;
 }
 
-.bitbelajar .card-right .card-content svg,
-.bitbelajar .card-right .card-content h2,
-.bitbelajar .card-right .card-content p {
+#bitbelajar .card-right .card-content svg,
+#bitbelajar .card-right .card-content h2,
+#bitbelajar .card-right .card-content p {
   color: var(--text-colot-white);
 }
-.bitbelajar .card-img {
+#bitbelajar .card-img {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
 /* =============== Feature */
-.feature {
+#feature {
   width: 100%;
   margin: 30px 0px;
 }
 
-.feature .container {
+#feature .container {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -325,14 +327,14 @@
   gap: 20px;
 }
 
-.feature .title h1 {
+#feature .title h1 {
   font-family: var(--font-family-1);
   font-size: var(--font-size-h1);
   text-transform: uppercase;
   text-align: center;
 }
 
-.feature .content-feature {
+#feature .content-feature {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -340,17 +342,17 @@
   position: relative;
 }
 
-.feature .content-feature img {
-  width: 100%;
+#feature .content-feature img {
+  width: 80%;
 }
-.feature .content-card {
+#feature .content-card {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
 
-.feature .content-card ul {
+#feature .content-card ul {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -359,7 +361,7 @@
   flex-wrap: wrap;
 }
 
-.feature .content-card .card {
+#feature .content-card .card {
   list-style: none;
   text-align: center;
   background-color: #fff;
@@ -371,12 +373,12 @@
   border: 2px solid #000;
 }
 
-.feature .content-card .forum {
+#feature .content-card .forum {
   width: 140px;
   height: 140px;
 }
 
-.feature .content-card .skill {
+#feature .content-card .skill {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -385,7 +387,7 @@
   transform: translateY(20px);
 }
 
-.feature .content-card .badge {
+#feature .content-card .badge {
   display: flex;
   flex-direction: row;
   width: 320px;
@@ -393,17 +395,72 @@
   transform: translateY(-10px);
 }
 
-.feature .content-card .badge h3 {
+#feature .content-card .badge h3 {
   margin: auto;
 }
 
-.feature .content-card .share {
+#feature .content-card .share {
   width: 125px;
   height: 132px;
 }
 
-.feature .content-card .learn {
+#feature .content-card .learn {
   width: 133px;
   height: 130px;
   transform: translateY(-20px);
+}
+
+/* =============== Join Section */
+#join {
+  width: 100%;
+  height: 720px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#join .container {
+  width: 100%;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+#join .container h1 {
+  font-family: var(--font-family-1);
+  font-size: 65px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#join .container h1 span {
+  color: transparent;
+  -webkit-text-stroke: 3px #fff;
+  letter-spacing: 5px;
+}
+
+#join .container p {
+  font-family: var(--font-family-1);
+  font-size: var(--font-size-h3);
+  font-weight: 500;
+  text-align: center;
+  margin: 10px 0px;
+}
+
+#join .container a {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px 30px;
+  font-family: var(--font-family-1);
+  font-size: var(--font-size-h3);
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-weight: 500;
+  margin: 20px;
+  text-transform: uppercase;
+  box-shadow: 0px 0px 15px 2px rgb(255, 255, 255);
 }

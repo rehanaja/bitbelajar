@@ -1,4 +1,4 @@
-const navbar = document.getElementById("navbar");
+const navbar = document.querySelector(".navbar");
 const scrollThreshold = 50;
 
 window.addEventListener("scroll", function () {

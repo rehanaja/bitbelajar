@@ -50,6 +50,23 @@
   font-weight: 600;
 }
 
+.navbar .container .navbar-toggle {
+  display: none;
+  background-color: transparent;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar .container .navbar-toggle .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #000;
+  transition: all 0.3s ease-in-out;
+}
+
 .navbar .container ul {
   display: flex;
 }
@@ -216,7 +233,6 @@
 /* ====== BitBelajar */
 #bitbelajar {
   width: 100%;
-  height: 100vh;
 }
 
 #bitbelajar .container {
@@ -681,59 +697,33 @@
 }
 
 #contact .contact-content {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 50px 0px;
-  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
 }
 
 #contact .contact-left {
-  width: 500px;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+  width: 100%;
 }
 
 #contact .sub-title {
-  width: 190px;
-  background-color: #f2f6fc;
-  padding: 5px;
-  display: flex;
-  font-family: var(--font-family-2);
-  font-size: var(--font-size-h3);
-  font-weight: 500;
-  align-items: center;
-  gap: 5px;
-}
-
-#contact .title-left {
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  margin-top: 100px;
+  width: 100%;
 }
 
 #contact .title-left h1 {
   font-size: 30px;
 }
 
-#contact .title-left h1,
-#contact .title-left p {
-  font-family: var(--font-family-1);
-}
-
 #contact .contact-right {
-  display: flex;
-  justify-content: center;
+  width: 100%;
 }
 
 #contact .contact-right form {
-  width: 650px;
   background-color: #f2f6fc;
   display: flex;
   justify-content: center;
   border-radius: 3px;
+  width: 400px;
 }
 
 #contact .contact-right form ul li {
@@ -755,7 +745,7 @@
 }
 
 #contact .contact-right form ul li textarea {
-  width: 605px;
+  width: 100%;
   height: 200px;
   padding: 10px 5px;
   margin-top: 5px;
@@ -844,6 +834,7 @@ footer .sub-title-join p {
 footer .btn-sub form {
   width: 500px;
   position: relative;
+  overflow: hidden;
 }
 
 footer .btn-sub form input {
@@ -855,6 +846,10 @@ footer .btn-sub form input {
   background-color: #f2f6fc;
 }
 
+footer .btn-sub form input:focus {
+  outline: none;
+}
+
 footer .btn-sub form button {
   position: absolute;
   right: 0;
@@ -864,9 +859,10 @@ footer .btn-sub form button {
   border-radius: 20px;
   cursor: pointer;
   font-family: var(--font-family-2);
-  font-size: 25px;
+  font-size: 26px;
   padding: 5px 40px;
   text-transform: uppercase;
+  border: none;
 }
 
 footer .social-media {

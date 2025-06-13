@@ -8,6 +8,9 @@
     <!-- Style Custom -->
     <link rel="stylesheet" href="style.css" />
 
+    <!-- Responsive -->
+    <link rel="stylesheet" href="responsive/responsive.css" />
+
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,11 +21,16 @@
   </head>
   <body>
     <!-- ----- Header ------- -->
-    <header class="navbar" id="navbar">
+    <nav class="navbar">
       <div class="container">
         <a href="#header" class="logo">BitBelajar</a>
 
-        <ul>
+        <button class="navbar-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <ul class="navbar-menu">
           <li>
             <a href="#home">Home</a>
           </li>
@@ -36,7 +44,6 @@
             <a href="#contact">Contact</a>
           </li>
         </ul>
-
         <div class="button-header">
           <a href="login.php" class="login">Sign In</a>
           <a href="signup.php" class="signup">Sign Up</a>
@@ -44,7 +51,7 @@
       </div>
 
       <!-- <div class="hamburger"></div> -->
-    </header>
+    </nav>
 
     <!-- ----------- Hero Seciton ------------- -->
     <section id="hero">
@@ -677,6 +684,7 @@
               type="email"
               name="email-sub"
               placeholder="Enter your email"
+              required
             />
             <button type="submit">Subcribe</button>
           </form>

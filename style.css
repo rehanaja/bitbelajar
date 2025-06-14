@@ -133,7 +133,6 @@
 /* =========== hero */
 #hero {
   width: 100%;
-  height: 100vh;
 }
 
 #hero .container {
@@ -416,7 +415,7 @@
 }
 
 #feature .content-card .share {
-  width: 125px;
+  width: 132px;
   height: 132px;
 }
 
@@ -424,6 +423,15 @@
   width: 133px;
   height: 130px;
   transform: translateY(-20px);
+}
+
+#feature .content-card .forum h3,
+#feature .content-card .skill h3,
+#feature .content-card .badge h3,
+#feature .content-card .share h3,
+#feature .content-card .learn h3 {
+  font-size: 16px;
+  font-family: var(--font-family-1);
 }
 
 /* =============== Join Section */
@@ -606,7 +614,7 @@
   left: 0;
   background-color: #000;
   border-radius: 50px 50px 0px 0px;
-  padding: 5px 20px 20px 20px;
+  padding: 5px 15px 20px 15px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -660,11 +668,12 @@
   padding: 5px;
   font-family: var(--font-family-2);
   font-size: 20px;
+  margin-top: 10px;
 }
 
 #about .team {
-  padding: 50px 0px;
-  width: 30%;
+  padding: 50px 0px 50px 50px;
+  width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -682,6 +691,7 @@
   font-family: var(--font-family-1);
   font-size: var(--font-size-h3);
   font-style: italic;
+  line-height: 10px;
 }
 
 /* ================== Contact Us */
@@ -697,33 +707,64 @@
 }
 
 #contact .contact-content {
-  flex-direction: column;
-  gap: 40px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 0px;
+  justify-content: center;
 }
 
 #contact .contact-left {
-  width: 100%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 #contact .sub-title {
-  margin-top: 100px;
-  width: 100%;
+  width: 190px;
+  background-color: #f2f6fc;
+  padding: 5px;
+  display: flex;
+  font-family: var(--font-family-2);
+  font-size: var(--font-size-h3);
+  font-weight: 500;
+  align-items: center;
+  gap: 5px;
+}
+
+#contact .title-left {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 #contact .title-left h1 {
   font-size: 30px;
 }
 
+#contact .title-left h1,
+#contact .title-left p {
+  font-family: var(--font-family-1);
+}
+
 #contact .contact-right {
-  width: 100%;
+  width: 60%;
+  display: flex;
+  justify-content: center;
 }
 
 #contact .contact-right form {
+  width: 570px;
   background-color: #f2f6fc;
   display: flex;
   justify-content: center;
   border-radius: 3px;
-  width: 400px;
+}
+
+#contact .contact-right form ul {
+  width: 90%;
 }
 
 #contact .contact-right form ul li {
@@ -752,6 +793,7 @@
   background-color: #e1e1e1;
   border-radius: 3px;
   border: none;
+  field-sizing: content;
 }
 
 #contact .contact-right form ul li button {
@@ -768,6 +810,11 @@
 #contact .contact-right form ul li textarea,
 #contact .contact-right form ul li button {
   font-family: var(--font-family-1);
+}
+
+#contact .contact-right form ul li input:focus,
+#contact .contact-right form ul li textarea:focus {
+  outline: none;
 }
 
 #contact .our-contact {
@@ -794,6 +841,10 @@
 #contact .text-contact p {
   font-family: var(--font-family-1);
   font-size: var(--font-size-p);
+}
+
+#contact .team {
+  margin-left: 50px;
 }
 
 /* ======================== Footer  */

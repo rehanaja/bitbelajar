@@ -6,10 +6,10 @@
     <title>BitBelajar - Learn Together, Grow Together</title>
 
     <!-- Style Custom -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
 
     <!-- Responsive -->
-    <link rel="stylesheet" href="responsive/responsive.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
 
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -23,7 +23,7 @@
     <!-- ----- Header ------- -->
     <nav class="navbar">
       <div class="container">
-        <a href="#hero" class="logo">BitBelajar</a>
+        <a href="#" class="logo">BitBelajar</a>
 
         <button class="navbar-toggle">
           <span class="bar"></span>
@@ -38,6 +38,9 @@
             <a href="#about">About Us</a>
           </li>
           <li>
+            <a href="#bitbelajar">Why BitBelajar ?</a>
+          </li>
+          <li>
             <a href="#feature">Feature</a>
           </li>
           <li>
@@ -45,12 +48,8 @@
           </li>
         </ul>
         <div class="button-header">
-          <a href="Login-dan-Sign-up-BitBelajar/Login1.php" class="login"
-            >Sign In</a
-          >
-          <a href="Login-dan-Sign-up-BitBelajar/1.php" class="signup"
-            >Sign Up</a
-          >
+          <a href="login.php" class="login">Sign In</a>
+          <a href="signup.php" class="signup">Sign Up</a>
         </div>
       </div>
 
@@ -61,7 +60,7 @@
     <section id="hero">
       <div class="container">
         <div class="background">
-          <img src="img/Background.png" alt="" />
+          <img src="assets/img/Background.png" alt="" />
         </div>
         <div class="content">
           <h1>
@@ -139,7 +138,7 @@
 
           <div class="card">
             <div class="card-img">
-              <img src="img/HandShake.png" alt="" />
+              <img src="assets/img/HandShake.png" alt="" />
             </div>
           </div>
 
@@ -207,7 +206,7 @@
           </h1>
         </div>
         <div class="content-feature">
-          <img src="img/Background Binary Code.png" alt="" />
+          <img src="assets/img/Background Binary Code.png" alt="" />
           <div class="content-card">
             <ul>
               <li class="card forum">
@@ -347,7 +346,7 @@
         <div class="profile">
           <div class="card-profile">
             <div class="card-img">
-              <img src="img/Raihan.png" alt="" />
+              <img src="assets/img/Raihan.png" alt="" />
             </div>
             <div class="card-text">
               <svg
@@ -372,7 +371,7 @@
 
           <div class="card-profile">
             <div class="card-img">
-              <img src="img/M. Maulidan K.png" alt="" />
+              <img src="assets/img/M. Maulidan K.png" alt="" />
             </div>
             <div class="card-text">
               <svg
@@ -397,7 +396,7 @@
 
           <div class="card-profile">
             <div class="card-img">
-              <img src="img/Sifa.png" alt="" />
+              <img src="assets/img/Sifa.png" alt="" />
             </div>
             <div class="card-text">
               <svg
@@ -816,6 +815,6 @@
     </footer>
 
     <!-- Javascript -->
-    <script src="function/script.js"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>

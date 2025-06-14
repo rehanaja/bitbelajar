@@ -1,3 +1,12 @@
+/* desktop */
+@media (max-width: 1440px) {
+}
+
+/* tablet */
+@media (max-width: 1024px) {
+}
+
+/* phone */
 @media (max-width: 600px) {
   body {
     overflow-x: hidden;
@@ -455,16 +464,4 @@
     font-family: var(--font-family-1);
     font-size: var(--font-size-p);
   }
-}
-
-/* desktop */
-@media (max-width: 1440px) {
-}
-
-/* tablet */
-@media (max-width: 1024px) {
-}
-
-/* phone */
-@media (max-width: 600px) {
 }

@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --primary-color: #679fc2;
   --secondary-color: #000000;
@@ -232,6 +236,7 @@
 /* ====== BitBelajar */
 #bitbelajar {
   width: 100%;
+  padding: 80px 0px;
 }
 
 #bitbelajar .container {
@@ -321,6 +326,12 @@
 #bitbelajar .card-right .card-content p {
   color: var(--text-color-white);
 }
+#bitbelajar .card-left .card-content h2,
+#bitbelajar .card-left .card-content p,
+#bitbelajar .card-right .card-content h2,
+#bitbelajar .card-right .card-content p {
+  font-family: var(--font-family-1);
+}
 #bitbelajar .card-img {
   width: 100%;
   display: flex;
@@ -331,6 +342,7 @@
 #feature {
   width: 100%;
   margin: 30px 0px;
+  padding: 80px 0px;
 }
 
 #feature .container {
@@ -492,8 +504,8 @@
 /* ================== About */
 #about {
   width: 100%;
-  height: 720px;
   margin: 50px 0px;
+  padding: 80px 0px;
 }
 
 #about .container {
@@ -508,6 +520,7 @@
   justify-content: center;
   align-items: start;
   flex-direction: column;
+  padding-left: 270px;
 }
 
 #about .left h3 {
@@ -698,7 +711,7 @@
 
 #contact {
   width: 100%;
-  padding: 50px 0px;
+  padding: 80px 0px;
 }
 
 #contact .container {
@@ -710,8 +723,9 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  padding: 50px 0px;
+  padding: 50px 0px 0px 0px;
   justify-content: center;
+  position: relative;
 }
 
 #contact .contact-left {
@@ -818,11 +832,14 @@
 }
 
 #contact .our-contact {
-  margin-top: 100px;
   width: 100%;
   display: flex;
   justify-content: center;
   gap: 100px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(115px);
 }
 
 #contact .our-contact .kotak {
@@ -854,6 +871,7 @@ footer {
   background-color: var(--primary-color);
   display: flex;
   flex-direction: column;
+  padding-top: 60px;
 }
 
 footer .sub-our {

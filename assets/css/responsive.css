@@ -302,7 +302,7 @@
   }
   #about .container {
     padding: 0px 30px;
-    overflow: hidden;
+    overflow: auto;
   }
 
   #about .left {
@@ -328,7 +328,6 @@
   #about .container .profile {
     min-width: max-content;
     justify-content: start;
-    overflow: auto;
   }
 
   #about .card-profile {

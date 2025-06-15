@@ -152,6 +152,8 @@ html {
 
 #hero .container .background img {
   width: 80%;
+  box-shadow: 0px 10px 40px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 60px;
 }
 
 #hero .container .content {

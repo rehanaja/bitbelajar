@@ -4,6 +4,251 @@
 
 /* tablet */
 @media (max-width: 1024px) {
+  .navbar {
+    position: sticky;
+  }
+
+  .navbar .container {
+    padding: 20px 30px;
+  }
+  .navbar .container .logo {
+    font-size: 35px;
+    z-index: 2000;
+  }
+  .navbar .container .navbar-menu {
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.7rem;
+    align-items: center;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    transform: translateY(-100%);
+    transition: transform 0.5s ease-in-out;
+  }
+  .navbar .container .navbar-menu.active {
+    transform: translateY(0%);
+  }
+
+  .navbar .container .navbar-toggle {
+    display: block;
+    z-index: 999;
+  }
+
+  .navbar .container .navbar-toggle .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #000;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .navbar .container ul li::after {
+    content: none;
+  }
+
+  .navbar .navbar-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .navbar .navbar-toggle.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .navbar .navbar-toggle.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .navbar .container .button-header {
+    display: none;
+  }
+
+  /* ===================== Hero */
+
+  #hero {
+    padding-top: 115px;
+  }
+
+  #hero .container .background img {
+    width: 100%;
+    border-radius: 25px;
+  }
+
+  #hero .container .content {
+    padding-top: 60px;
+  }
+
+  #hero .container .content h1 {
+    font-size: 50px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+  }
+
+  #hero .container .content p {
+    font-size: 16px;
+  }
+
+  #hero .container .mouse-scroll {
+    margin-top: 150px;
+  }
+
+  /* ================== Bitbelajar */
+
+  #bitbelajar {
+    padding: 90px 0px 0px 0px;
+  }
+
+  #bitbelajar .container {
+    padding: 15px 25px;
+  }
+
+  #bitbelajar .container .card-content svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  #bitbelajar .container .card-content h2 {
+    font-size: 20px;
+  }
+
+  #bitbelajar .container .card-content p {
+    font-size: 14px;
+  }
+
+  #bitbelajar .container .card {
+    height: 495px;
+  }
+  #bitbelajar .container .card-left,
+  #bitbelajar .container .card-right {
+    height: 240px;
+  }
+
+  #bitbelajar .container .card:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #bitbelajar .container .card-img img {
+    width: 265px;
+  }
+
+  /* ================= Feature */
+  #feature {
+    margin: 0px;
+    padding: 80px 0px 0px 0px;
+  }
+
+  #feature .container {
+    padding: 15px 30px;
+  }
+
+  #feature .container .content-feature img {
+    width: 100%;
+  }
+
+  #feature .container .content-card ul {
+    width: 440px;
+  }
+
+  #feature .container .content-card .forum {
+    width: 120px;
+    height: 120px;
+    transform: translateY(0px);
+  }
+
+  #feature .container .content-card .skill {
+    width: 165px;
+    height: 90px;
+    transform: translateY(15px);
+  }
+
+  #feature .container .content-card .badge {
+    width: 215px;
+    height: 90px;
+  }
+
+  #feature .container .content-card .share {
+    width: 115px;
+    height: 115px;
+  }
+
+  #feature .container .content-card .learn {
+    width: 110px;
+    height: 115px;
+    transform: translate(-8px, -18px);
+  }
+
+  #feature .container .content-card .forum svg,
+  #feature .container .content-card .skill svg,
+  #feature .container .content-card .badge svg,
+  #feature .container .content-card .share svg,
+  #feature .container .content-card .learn svg {
+    width: 25px;
+    height: 25px;
+  }
+
+  #feature .container .content-card .forum h3,
+  #feature .container .content-card .skill h3,
+  #feature .container .content-card .badge h3,
+  #feature .container .content-card .share h3,
+  #feature .container .content-card .learn h3 {
+    font-size: 12px;
+  }
+
+  /* ========== Join */
+  #join {
+    height: 600px;
+  }
+  #join .container {
+    padding: 15px 30px;
+    height: 500px;
+  }
+
+  /* ============= About */
+  #about {
+    margin: 0px;
+  }
+
+  #about .container {
+    padding: 15px 30px;
+    justify-content: center;
+  }
+
+  #about .container .left {
+    width: 100%;
+    height: 170px;
+    padding-left: 50px;
+  }
+
+  #about .container .title {
+    padding: 0px 30px;
+    width: 100%;
+  }
+
+  #about .container .title h1 {
+    text-align: end;
+  }
+
+  #about .container .profile {
+    width: 80%;
+  }
+
+  #about .container .card-profile {
+    padding: 10px;
+  }
+
+  #about .container .card-profile {
+    padding: 10px;
+  }
+
+  #about .container .card-profile::nth-child(2) .card-text {
+    padding: 5px 10px 20px 10px;
+  }
 }
 
 /* phone */
@@ -39,6 +284,10 @@
     background-color: #fff;
     transform: translateY(-100%);
     transition: transform 0.5s ease-in-out;
+  }
+
+  .navbar .container ul li::after {
+    content: none;
   }
 
   .navbar .container .navbar-menu.active {
@@ -82,6 +331,7 @@
 
   #hero .container .background img {
     width: 90%;
+    border-radius: 30px;
   }
 
   #hero .container .content h1 {
@@ -176,6 +426,10 @@
     align-items: center;
     gap: 20px;
     padding: 0px 20px;
+  }
+
+  #feature .container .title h1 {
+    font-size: 30px;
   }
 
   #feature .content-feature {
@@ -413,6 +667,10 @@
   footer .sub-our {
     flex-direction: column;
     gap: 50px;
+  }
+
+  footer .sub-title-join h2 {
+    line-height: 40px;
   }
 
   footer .btn-sub {

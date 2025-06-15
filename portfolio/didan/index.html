@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Programming 1 Maulidan</title>
+    <link rel="stylesheet" href="style.css" />
+    <!----Font awesome cdn  font icon css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="hero-header">
+      <div class="wrapper">
+        <header>
+          <div class="logo">
+            <i class="fa-solid fa-m"></i>
+            <div class="logo-text">Welcome To My Website</div>
+          </div>
+          <nav>
+            <div class="togglebtn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <ul class="navlinks">
+              <li><a href="#">Home</a></li>
+              <li><a href="">Portofolio</a></li>
+              <li><a href="TUGAS01.html">Tugas 1</a></li>
+              <li><a href="TUGAS02.php">Tugas 2</a></li>
+              <li><a href="TUGAS03A.php">Tugas 3</a></li>
+              <li><a href="TUGAS04.php">Tugas 4</a></li>
+              <li><a href="UTS/inputUTS.php">UTS1</a></li>
+              <li><a href="UTS/Toko Asyik Banget.php">UTS2</a></li>
+            </ul>
+          </nav>
+        </header>
+        <div class="container">
+          <div class="hero-pic">
+            <img src="AI Maulidan3.jpg" alt="profile pic" />
+          </div>
+          <div class="hero-text">
+            <h5>Hi I'm <span class="input">Freelancer</span></h5>
+            <h1>M.Maulidan Khodhawa</h1>
+            <p>
+              Saya Adalah Seorang Mahasiswa Universitas Bina Sarana Informatika
+              Prodi Sistem Informasi Fakultas Teknik Dan Informatika || Saya
+              Juga Mempunyai Beberapa Pengalaman dalam Bekerja di Bidang Desain
+              Grafis , Editing Video , Entry Data , Crew Store , Security
+              Sekolah Dan Operator Gudang...
+            </p>
+
+            <div class="btn-group">
+              <a href="Curriculum Vitae-1.png" class="btn active">Portofolio</a>
+              <a href="#" class="btn">Contact</a>
+            </div>
+
+            <div class="social">
+              <a href="https://www.facebook.com/didan.skennedy.7"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/m-maulidan-khodhawa-6503b7367?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/lordzdidan_25?igsh=MTR5ZjFkbzQzZ3AyZA=="
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a
+                href="https://youtube.com/@didanmaulidan-m6s?si=itXZXE-w159zX1e1"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---typed js for typing text effect-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script>
+      /** creating button click show hide navbar **/
+      var togglebtn = document.querySelector(".togglebtn");
+      var nav = document.querySelector(".navlinks");
+      var links = document.querySelector(".navlinks li");
+
+      togglebtn.addEventListener("click", function () {
+        this.classList.toggle("click");
+        nav.classList.toggle("open");
+      });
+
+      var typed = new Typed(".input", {
+        strings: ["Freelancer", "Design Graphic", "Video Editing"],
+        typedSpeed: 70,
+        backSpeed: 75,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>

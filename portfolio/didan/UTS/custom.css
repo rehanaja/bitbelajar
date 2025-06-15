@@ -1,0 +1,79 @@
+/* - * adalah selector universal, yang berarti aturan ini akan diterapkan ke semua elemen dalam halaman web.
+- margin: 0; menghilangkan margin bawaan dari semua elemen, memastikan tidak ada ruang tambahan di luar batas elemen.
+- padding: 0; menghilangkan padding bawaan dari semua elemen, memastikan tidak ada ruang tambahan di dalam batas elemen.
+- box-sizing: border-box; memastikan bahwa lebar dan tinggi elemen mencakup padding dan border, sehingga ukuran elemen tetap sesuai dengan yang diatur oleh width dan height.
+*/
+
+/* bagian input form */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.judul h1 {
+  padding: 15px;
+}
+
+.data-pelanggan {
+  text-decoration: underline;
+}
+
+.col-left {
+  width: 400px;
+}
+
+.col-right {
+  width: 400px;
+}
+
+.all {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.alamat {
+  padding-right: 8px;
+}
+
+.tbeli {
+  padding-right: 55px;
+}
+
+.merk {
+  padding-right: 100px;
+}
+
+.tipe {
+  padding-right: 23px;
+}
+
+.submit button {
+  padding: 3px;
+}
+
+.submit button:nth-child(2) {
+  margin-left: 3px;
+}
+
+/* bagian process */
+.border {
+  width: 700px;
+  padding: 5px 15px;
+  border: 2px solid;
+}
+
+.border ul li {
+  list-style: none;
+}

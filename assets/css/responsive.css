@@ -109,6 +109,7 @@
   #bitbelajar {
     width: 100%;
     margin-bottom: 50px;
+    padding: 100px 0px;
   }
 
   #bitbelajar .container {
@@ -148,6 +149,10 @@
     flex-direction: column;
   }
 
+  #bitbelajar .card-container .card-img {
+    overflow: hidden;
+  }
+
   #bitbelajar .card {
     width: 100%;
     display: flex;
@@ -160,6 +165,7 @@
   #feature {
     width: 100%;
     margin-top: 50px;
+    padding: 100px 0px;
   }
 
   #feature .container {
@@ -267,7 +273,7 @@
   }
 
   #join .container h1 {
-    font-size: 30px;
+    font-size: 25px;
   }
 
   #join .container h1 span {
@@ -319,12 +325,13 @@
   }
 
   #about .container .profile {
-    width: 100%;
+    min-width: max-content;
+    justify-content: start;
+    overflow: auto;
   }
 
   #about .card-profile {
-    width: 140px;
-
+    width: 240px;
     padding: 10px;
   }
 
@@ -387,27 +394,36 @@
   }
 
   #contact .our-contact {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+    position: static;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    transform: translateY(0px);
   }
 
   #contact .our-contact .kotak {
-    padding: 15px;
+    width: 70%;
+  }
+
+  /* =============== Footer */
+
+  footer .sub-our {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  footer .btn-sub {
+    width: 100%;
     display: flex;
-    gap: 5px;
-    border-radius: 10px;
-    background-color: #f2f6fc;
+    justify-content: flex-end;
   }
 
-  #contact .text-contact h3 {
-    font-family: var(--font-family-2);
-    font-size: var(--font-size-h3);
+  footer .btn-sub form {
+    width: 400px;
   }
 
-  #contact .text-contact p {
-    font-family: var(--font-family-1);
-    font-size: var(--font-size-p);
+  footer .btn-sub form button {
+    font-size: 20px;
+    padding: 9px 40px;
   }
 }

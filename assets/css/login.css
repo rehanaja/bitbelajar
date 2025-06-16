@@ -2,20 +2,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", sans-serif;
 }
 
 body {
+  width: 100%;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #e9f0f6;
 }
 
 .container {
-  width: 900px;
-  height: 500px;
+  width: 100%;
+  height: 100vh;
   display: flex;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -35,19 +31,25 @@ body {
 .logo {
   position: absolute;
   top: 20px;
-  left: 20px;
-  font-weight: bold;
+  left: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  font-family: "Teko";
+}
+
+.logo a {
   color: black;
-  font-size: 20px;
+  text-decoration: none;
 }
 
 .tagline {
   position: absolute;
-  top: 50px;
-  left: 20px;
-  font-size: 0.9rem;
+  top: 65px;
+  left: 50px;
+  font-size: 16px;
   color: rgb(0, 0, 0);
   transform: translateX(10);
+  font-family: "Roboto";
 }
 
 .illustration {
@@ -66,16 +68,25 @@ body {
 .login-box {
   width: 80%;
   max-width: 300px;
+  display: flex;
+  flex-direction: column;
 }
 
 .login-box h2 {
   text-align: center;
   margin-bottom: 20px;
+  font-family: "Teko";
+  font-size: 36px;
+}
+
+.login-box label {
+  font-family: "Roboto";
 }
 
 .input-group {
   display: flex;
   align-items: center;
+  margin-top: 5px;
   margin-bottom: 15px;
   border: 1px solid #ccc;
   padding: 8px;
@@ -93,6 +104,7 @@ body {
   background: transparent;
   outline: none;
   flex: 1;
+  font-family: "Roboto";
 }
 
 .btn {
@@ -104,15 +116,18 @@ body {
   border-radius: 5px;
   cursor: pointer;
   margin-top: 10px;
+  font-family: "Roboto";
 }
 
 .signup {
   text-align: center;
   margin-top: 10px;
   font-size: 0.9rem;
+  font-family: "Roboto";
 }
 
 .signup a {
   color: #007bff;
   text-decoration: none;
+  font-family: "Roboto";
 }

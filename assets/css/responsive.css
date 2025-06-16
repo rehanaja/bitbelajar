@@ -1,5 +1,18 @@
 /* desktop */
+@media (max-width: 1920px) {
+  #about .container .left {
+    padding-left: 130px;
+  }
+}
+
 @media (max-width: 1440px) {
+  #about .container .left {
+    padding-left: 0px;
+  }
+
+  #join {
+    height: 550px;
+  }
 }
 
 /* tablet */
@@ -70,12 +83,12 @@
   /* ===================== Hero */
 
   #hero {
-    padding-top: 115px;
+    padding-top: 30px;
   }
 
   #hero .container .background img {
     width: 100%;
-    border-radius: 25px;
+    border-radius: 40px;
   }
 
   #hero .container .content {
@@ -93,7 +106,7 @@
   }
 
   #hero .container .mouse-scroll {
-    margin-top: 150px;
+    margin-top: 20px;
   }
 
   /* ================== Bitbelajar */
@@ -212,6 +225,7 @@
   /* ============= About */
   #about {
     margin: 0px;
+    padding: 80px 0px 0px 0px;
   }
 
   #about .container {
@@ -248,6 +262,54 @@
 
   #about .container .card-profile::nth-child(2) .card-text {
     padding: 5px 10px 20px 10px;
+  }
+
+  #about .container .team {
+    width: 100%;
+    padding: 0px 0px 50px 0px;
+  }
+
+  #about .container .team h1 {
+    letter-spacing: 50px;
+    width: 100%;
+    text-align: center;
+  }
+
+  #about .container .team p {
+    letter-spacing: 10px;
+    line-height: 30px;
+    text-align: center;
+    width: 100%;
+  }
+
+  /* =========== Contact */
+  #contact {
+    padding: 80px 0px 100px 0px;
+  }
+
+  #contact .container {
+    padding: 0px 30px;
+  }
+
+  #contact .our-contact {
+    gap: 40px;
+    transform: translateY(135px);
+  }
+
+  /* ================ Footer */
+  footer .sub-our .btn-sub form {
+    width: 410px;
+  }
+
+  footer .sub-our .btn-sub form button {
+    padding: 10px 25px;
+    font-size: 20px;
+    bottom: 0;
+  }
+
+  footer .social-media {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 

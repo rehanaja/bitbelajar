@@ -15,6 +15,45 @@
   }
 }
 
+@media (max-width: 1265px) {
+  #hero {
+    padding-top: 30px;
+  }
+
+  #hero .container .background img {
+    width: 70%;
+    border-radius: 40px;
+  }
+
+  #hero .container .content h1 {
+    font-size: 45px;
+  }
+
+  #hero .container .content p {
+    font-size: 16px;
+  }
+
+  #bitbelajar .card {
+    height: 585px;
+  }
+
+  #bitbelajar .card .card-left {
+    width: 320px;
+    height: 285px;
+  }
+
+  #bitbelajar .card .card-img img {
+    width: 350px;
+  }
+
+  #bitbelajar .card .card-right {
+    height: 285px;
+  }
+  #join .container h1 {
+    font-size: 50px;
+  }
+}
+
 /* tablet */
 @media (max-width: 1024px) {
   .navbar {

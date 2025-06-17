@@ -15,7 +15,7 @@
   }
 }
 
-@media (max-width: 1265px) {
+/* @media (max-width: 1265px) {
   #hero {
     padding-top: 30px;
   }
@@ -52,7 +52,7 @@
   #join .container h1 {
     font-size: 50px;
   }
-}
+} */
 
 /* tablet */
 @media (max-width: 1024px) {

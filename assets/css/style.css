@@ -9,7 +9,7 @@ html {
 }
 
 :root {
-  --primary-color: #679fc2;
+  --primary-color: #0071db;
   --secondary-color: #000000;
   --text-color-white: #fff;
   --font-size-p: 16px;
@@ -305,6 +305,7 @@ html {
 }
 
 #bitbelajar .card-content {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;

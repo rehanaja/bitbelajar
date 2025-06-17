@@ -18,7 +18,7 @@ body {
 
 .left-panel {
   flex: 1;
-  background-color: #5293c4;
+  background-color: #0071db;
   color: white;
   padding: 30px;
   position: relative;
@@ -130,4 +130,57 @@ body {
   color: #007bff;
   text-decoration: none;
   font-family: "Roboto";
+}
+
+@media (max-width: 1024px) {
+  .container .left-panel {
+    position: relative;
+  }
+
+  .container .right-panel {
+    flex: 0;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    transform: translate(-50%, 100%);
+    border-radius: 20px;
+    width: 60%;
+    height: 400px;
+  }
+
+  .login-box {
+    max-width: 400px;
+  }
+
+  .illustration {
+    width: 50%;
+    margin-top: 10px;
+    position: absolute;
+    top: 14%;
+  }
+}
+
+@media (max-width: 600px) {
+  .container .left-panel {
+    position: relative;
+  }
+  .container .right-panel {
+    flex: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    width: 80%;
+    height: 320px;
+  }
+
+  .container .illustration {
+    width: 60%;
+    margin-top: 10px;
+    position: absolute;
+    top: 16%;
+  }
 }

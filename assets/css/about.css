@@ -103,7 +103,7 @@
   color: #000;
 }
 
-.navbar.scrolled {
+.navbar.scrolled-about {
   height: 80px;
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -118,10 +118,75 @@
   padding: 0px;
 }
 
-#hero-about .container img {
-  position: absolute;
-  top: 0;
-  left: 0;
+#hero-about .container .banner-about {
   width: 100%;
-  height: 700px;
+  position: relative;
+}
+
+#hero-about .container .banner-about img {
+  width: 100%;
+  margin-top: -150px;
+}
+
+#hero-about .container .mouse-scroll {
+  position: absolute;
+  left: 50%;
+  bottom: 170px;
+  width: 25px;
+  height: 40px;
+  border: 2px solid #fff;
+  border-radius: 40px;
+  margin-top: 25px;
+  animation-name: movee;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+}
+
+@keyframes movee {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(7px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+#hero-about .container .mouse-scroll::before {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  left: 50%;
+  top: 5px;
+  animation-name: scrolling;
+  animation-iteration-count: infinite;
+  animation-duration: 1.5s;
+}
+
+@keyframes scrolling {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 0px);
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+    transform: translate(-50%, 20px);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, 20px);
+  }
+}
+
+footer {
+  width: 100%;
 }

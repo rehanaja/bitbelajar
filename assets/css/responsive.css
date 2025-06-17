@@ -15,7 +15,7 @@
   }
 }
 
-/* @media (max-width: 1265px) {
+@media (max-width: 1280px) {
   #hero {
     padding-top: 30px;
   }
@@ -38,7 +38,6 @@
   }
 
   #bitbelajar .card .card-left {
-    width: 320px;
     height: 285px;
   }
 
@@ -52,7 +51,7 @@
   #join .container h1 {
     font-size: 50px;
   }
-} */
+}
 
 /* tablet */
 @media (max-width: 1024px) {

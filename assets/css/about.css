@@ -186,6 +186,20 @@
     transform: translate(-50%, 20px);
   }
 }
+.splide {
+  width: 100%;
+}
+
+.my-carousel-progress {
+  background: #ccc;
+}
+
+.my-carousel-progress-bar {
+  background: greenyellow;
+  height: 2px;
+  transition: width 400ms ease;
+  width: 0;
+}
 
 footer {
   width: 100%;

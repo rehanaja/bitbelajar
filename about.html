@@ -15,6 +15,12 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Splide link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
   </head>
   <body>
     <!-- ----- Header ------- -->
@@ -29,7 +35,7 @@
         </button>
         <ul class="navbar-menu">
           <li>
-            <a href="#" class="link">Home</a>
+            <a href="index.html" class="link">Home</a>
           </li>
           <li>
             <a href="#about" class="link">About Us</a>
@@ -61,8 +67,89 @@
         <div class="content-about">
           <div class="title">
             <h1>About Us</h1>
+            <p>
+              Komunitas belajar kolaboratif, partisipatif, dan terbuka. Tempat
+              semua bisa bertanya, berbagi, dan tumbuh bersama.
+            </p>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section id="our-story">
+      <div class="container">
+        <div class="title">
+          <h1>Our Story</h1>
+          <p>
+            Dimulai dari inisiatif 4 mahasiswa Raihan, Sifa, Didan dan Nilna
+            yang ingin menciptakan ruang belajar bareng tanpa rasa takut
+            tertinggal.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="value">
+      <div class="container">
+        <div class="title">
+          <h1>apa yang kami percaya</h1>
+        </div>
+        <div class="card-value">
+          <ul>
+            <li>Kolaboratif – Semua orang bisa berkontribusi</li>
+            <li>Partisipatif – Belajar dengan aktif berdiskusi</li>
+            <li>Terbuka – Sumber belajar dari mana saja</li>
+            <li>Bertumbuh Bersama – Naik level bareng komunitas</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="visi">
+      <div class="container">
+        <div class="title">
+          <h1>Visi Kami</h1>
+          <p>
+            Menjadi komunitas belajar teknologi berbasis kolaborasi terbesar di
+            Indonesia.
+          </p>
+        </div>
+        <div class="sub-title">
+          <h1>Misi Kami</h1>
+          <ul>
+            <li>Menyediakan ruang diskusi terbuka</li>
+            <li>Mendukung pembelajaran aktif dan inklusif</li>
+            <li>Membangun jaringan relasi pembelajar</li>
+            <li>Mendorong semangat kontribusi dan berbagi</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h1>Siapa yang Cocok Gabung?</h1>
+        <ul>
+          <li>Mahasiswa yang ingin belajar bareng</li>
+          <li>Penggiat IT yang haus ilmu baru</li>
+          <li>Siapa saja yang mau berkembang bareng komunitas</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="splide" aria-label="" style="width: 100%">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">Slide 01</li>
+          <li class="splide__slide">Slide 02</li>
+          <li class="splide__slide">Slide 03</li>
+          <li class="splide__slide">Slide 04</li>
+        </ul>
+      </div>
+
+      <!-- Add the progress bar element -->
+      <div class="my-carousel-progress">
+        <div class="my-carousel-progress-bar"></div>
       </div>
     </section>
 
@@ -194,35 +281,9 @@
     </footer>
 
     <!-- javascript -->
-    <script>
-      // navbar on scrolling
-      const navbar = document.querySelector(".navbar");
-      const navLink = document.querySelectorAll(".link");
-      const logButton = document.querySelector(".login");
-      const sigButton = document.querySelector(".signup");
-      const scrollThreshold = 60;
+    <script src="assets/js/about.js"></script>
 
-      navLink.forEach((link) => {
-        window.addEventListener("scroll", function () {
-          if (this.window.scrollY > scrollThreshold) {
-            navbar.classList.add("scrolled-about");
-            link.style.color = "#000";
-            logButton.style.border = "2px solid #000";
-            logButton.style.color = "#000";
-            sigButton.style.border = "2px solid #000";
-            sigButton.style.color = "#fff";
-            sigButton.style.backgroundColor = "#000";
-          } else {
-            navbar.classList.remove("scrolled-about");
-            link.style.color = "#fff";
-            logButton.style.border = "2px solid #fff";
-            logButton.style.color = "#fff";
-            sigButton.style.border = "2px solid #fff";
-            sigButton.style.backgroundColor = "#fff";
-            sigButton.style.color = "#000";
-          }
-        });
-      });
-    </script>
+    <!-- Splide Carousel -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
   </body>
 </html>

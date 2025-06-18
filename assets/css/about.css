@@ -126,6 +126,7 @@
 #hero-about .container .banner-about img {
   width: 100%;
   margin-top: -150px;
+  object-fit: cover;
 }
 
 #hero-about .container .mouse-scroll {
@@ -186,19 +187,22 @@
     transform: translate(-50%, 20px);
   }
 }
-.splide {
+
+.content-about .title {
   width: 100%;
 }
 
-.my-carousel-progress {
-  background: #ccc;
+.content-about .title h1 {
+  font-family: "Teko";
+  text-transform: uppercase;
+  font-size: 55px;
+  text-align: center;
 }
 
-.my-carousel-progress-bar {
-  background: greenyellow;
-  height: 2px;
-  transition: width 400ms ease;
-  width: 0;
+.content-about .title p {
+  font-family: "Roboto";
+  font-size: 16px;
+  text-align: center;
 }
 
 footer {

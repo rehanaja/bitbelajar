@@ -656,7 +656,7 @@
   }
   #about .container {
     padding: 0px 30px;
-    overflow: auto;
+    overflow: hidden;
   }
 
   #about .left {

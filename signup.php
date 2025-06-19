@@ -1,3 +1,19 @@
+<?php 
+require "app/config/database.php";
+require "app/includes/function.php";
+
+  if (isset($_POST["register"])) {
+    if(registrasi($_POST) > 0 ) {
+      echo "<script>
+          alert('User baru berhasil ditambahkan');
+      </script>";
+    } else {
+      echo mysqli_error($connect);
+    }
+  }
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,17 +40,17 @@
       </div>
       <div class="form-container">
         <h3>Sign Up</h3>
-        <form>
-          <input type="text" placeholder="Name" required />
-          <input type="text" placeholder="Username" required />
-          <input type="email" placeholder="Email address" required />
-          <input type="password" placeholder="Password" required />
-          <input type="password" placeholder="Confirm Password" required />
+        <form action="" method="post">
+          <input type="text" placeholder="Name" name="nama" required />
+          <input type="text" placeholder="Username" name="username" required />
+          <input type="email" placeholder="Email address" name="email" required />
+          <input type="password" placeholder="Password" name="password" required />
+          <input type="password" placeholder="Confirm Password" name="password2" required />
           <label class="terms">
             <input type="checkbox" required />
             Accept Terms and Conditions
           </label>
-          <button type="submit">Register →</button>
+          <button type="submit" name="register">Register →</button>
         </form>
       </div>
     </div>

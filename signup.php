@@ -52,6 +52,7 @@ require "app/includes/function.php";
           </label>
           <button type="submit" name="register">Register →</button>
         </form>
+        <p style="text-align: center; padding-top: 15px;">Already have an account? <a href="login.php" style="color: #0071db; text-decoration: none;">Sign in</a></p>
       </div>
     </div>
     <div class="info-section">

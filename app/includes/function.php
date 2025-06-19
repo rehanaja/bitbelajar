@@ -19,6 +19,16 @@ function registrasi($data) {
         return false;
     }
 
+    // cek email sudah ada atau belum
+    $email_result = mysqli_query($connect, "SELECT email FROM user WHERE email = '$email'");
+
+    if(mysqli_fetch_assoc($email_result)) {
+        echo "<script>
+        alert('email terdaftar');
+        </script>";
+        return false;
+    }
+
     // cek konfirmasi password
     if ($password2 != $password) {
         echo "<script>

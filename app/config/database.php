@@ -1,6 +1,6 @@
 <?php 
 // Koneksi ke database
-$connect = mysqli_connect("localhost", "root", "", "bitbelajar");
+$connect = mysqli_connect("localhost", "root", "", "Bitbelajar");
 
 // jika tidak terkoneksi
 if (!$connect) {
@@ -23,6 +23,4 @@ function query($query) {
     }
     return $rows;
 }
-
-
 ?>

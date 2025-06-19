@@ -331,6 +331,9 @@ footer {
   .navbar .container ul li a {
     color: #000000;
   }
+  #hero-about .content-about {
+    height: max-content;
+  }
 }
 
 @media (max-width: 600px) {
@@ -363,7 +366,7 @@ footer {
   }
 
   #hero-about .content-about .sub-title img,
-  p {
+  #hero-about .content-about .sub-title p {
     width: 100%;
   }
 
@@ -401,5 +404,9 @@ footer {
 
   #visi .container .title-right ul li {
     list-style: none;
+  }
+
+  footer .copyright {
+    align-items: center;
   }
 }
